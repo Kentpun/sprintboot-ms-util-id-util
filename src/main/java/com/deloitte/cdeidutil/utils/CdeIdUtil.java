@@ -13,7 +13,7 @@ public class CdeIdUtil {
     private final CrudRepository<CdeId, String> cdeIdRepository;
 
     public String generateCdeId(String type, Long timeToLive){
-        CdeId.Type typeObj = CdeId.Type.valueOf(type);
+        CdeId.Type typeObj = CdeId.Type.getByValue(type);
         SimpleDateFormat formatter = new SimpleDateFormat("yyyyMMddHHmmss");
         Date date = new Date();
         String dateTimeString = formatter.format(date);
