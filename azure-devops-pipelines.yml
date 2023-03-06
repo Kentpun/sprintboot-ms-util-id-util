@@ -18,7 +18,7 @@ stages:
       - job: Build
         displayName: Build
         pool:
-          name: PrivateAgent
+          name: Private-agent-integration
         steps:
           - task: Bash@3
             displayName: Pipeline Preparation [env, m2, PATH]
