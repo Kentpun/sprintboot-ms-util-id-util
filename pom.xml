@@ -11,8 +11,8 @@
 
     <distributionManagement>
         <repository>
-            <id>dttdevops</id>
-            <url>https://pkgs.dev.azure.com/dttdevops/_packaging/dttdevops/maven/v1</url>
+            <id>axacde</id>
+            <url>https://pkgs.dev.azure.com/axacde/_packaging/axacde/maven/v1</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
