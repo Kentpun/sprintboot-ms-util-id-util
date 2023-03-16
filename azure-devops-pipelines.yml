@@ -51,4 +51,5 @@ stages:
               mavenAuthenticateFeed: false # boolean. Alias: mavenFeedAuthenticate. Required. Authenticate built-in Maven feeds. Default: false.
               effectivePomSkip: false # boolean. Alias: skipEffectivePom. Required. Skip generating effective POM while authenticating built-in feeds. Default: false.
               # Code Analysis
-              sonarQubeRunAnalysis: false # boolean. Alias: sqAnalysisEnabled. Required. Run SonarQube or SonarCloud analysis. Default: false.
+              sonarQubeRunAnalysis: true # boolean. Alias: sqAnalysisEnabled. Required. Run SonarQube or SonarCloud analysis. Default: false.
+              sqMavenPluginVersionChoice: 'latest'
