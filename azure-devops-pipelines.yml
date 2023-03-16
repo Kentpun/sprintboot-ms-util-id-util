@@ -20,6 +20,16 @@ stages:
         pool:
           name: Private-agent-integration
         steps:
+          - checkout: self
+            fetchDepth: 0
+          - task: SonarCloudPrepare@1
+            inputs:
+              SonarCloud: 'sonarcloud-$(Build.Repository.Name)'
+              organization: 'axacde'
+              scannerMode: 'Other'
+              extraProperties: |
+                sonar.projectKey=axacde_$(Build.Repository.Name)
+                sonar.projectName=$(Build.Repository.Name)      
           - task: Bash@3
             displayName: Pipeline Preparation [env, m2, PATH]
             inputs:
