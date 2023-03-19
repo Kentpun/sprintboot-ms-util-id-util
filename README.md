@@ -1,5 +1,5 @@
 # Introduction 
-A UTIL to generate ID leverage Redis
+A UTIL to generate unique transaction ID leveraging Redis
 
 # Getting Started
 TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
